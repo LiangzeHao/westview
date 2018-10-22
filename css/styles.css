@@ -19,6 +19,7 @@
 #main-content{
 	width: auto;
 	padding: 0;
+	padding-bottom: 2em;
 }
 #myCarousel{
 	width: auto;
@@ -52,9 +53,41 @@
 .button{
 	margin-left: 30%;
 }
-.footer{
-	display: block;
+footer{
+	float: left;
 	background-color: black;
-	width: auto;
+	width: 100%;
 	height: 20em;
+	padding-top: 2em;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+footer h1{
+	color: white;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+footer span{
+	color: white;
+}
+.footer_title{
+	border-bottom: 1px solid white;
+}
+.footer_title span{
+	position: absolute;
+	bottom:10px;
+	right:0;
+}
+.footer_nav{
+	float:left;
+	height:10em;
+
+}
+.footer_nav ul{
+	list-style: none;
+	padding-left: 0;
+}
+.footer_nav li{
+	color: white;
+	margin: 1em;
 }
