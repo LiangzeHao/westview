@@ -46,6 +46,15 @@
 	border-style: groove;
 	padding: 1em;
 }
-.space{
-	width: 12.499999995%;
+.tile_intro{
+	text-align: center;
+}
+.button{
+	margin-left: 30%;
+}
+.footer{
+	display: block;
+	background-color: black;
+	width: auto;
+	height: 20em;
 }
