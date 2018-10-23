@@ -21,6 +21,8 @@
 	padding: 0;
 	padding-bottom: 2em;
 }
+
+/*Carousel*/
 #myCarousel{
 	width: auto;
 	height: 500px;
@@ -33,6 +35,8 @@
 	top: 35%;
 
 }
+
+/* tiles */
 #home_tiles{
 	margin:auto;
 	padding-top: 40px;
@@ -48,7 +52,14 @@
     padding: 1em;
 }
 
+.tile_intro{
+	text-align: center;
+}
+.button{
+	margin-left: 30%;
+}
 
+/* banner */
 .banner{
     width:100%;
     overflow: hidden;
@@ -72,6 +83,7 @@
     vertical-align:bottom;
 }
 
+/*color block */
 .color_block{
     display: inline-block;
     margin: 1em 2em;
@@ -89,12 +101,7 @@
    padding: 0.2em;
 }
 
-.tile_intro{
-	text-align: center;
-}
-.button{
-	margin-left: 30%;
-}
+/* footer */
 footer{
 	float: left;
 	background-color: black;
@@ -132,4 +139,10 @@ footer span{
 .footer_nav li{
 	color: white;
 	margin: 1em;
+}
+
+/*custom coating page*/
+.coating_intro{
+	text-align: center;
+	padding-top: 2em;
 }
