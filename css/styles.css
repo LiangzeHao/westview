@@ -33,7 +33,26 @@
 }
 .carousel-caption{
 	top: 35%;
-
+}
+.carousel-caption h1{
+	font-weight: bold;
+	color: black;
+}
+.carousel-caption p{
+	font-size: 1.2em;
+	color: black;
+}
+.carousel_slide{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.carousel-indicators .active{
+	background-color: black;
+	border-color: black;
+}
+.carousel-indicators li{
+	background-color: grey;
+	border-color: grey;
 }
 
 /* tiles */
@@ -50,11 +69,9 @@
 .tiles {
     border-style: groove;
     padding: 1em;
+    text-align: center;
 }
 
-.tile_intro{
-	text-align: center;
-}
 .tile_intro p{
 	margin-bottom: 1em;
 }
@@ -63,7 +80,8 @@
 }
 
 .button{
-	margin-left: 30%;
+	text-align: center;
+	margin-left: 25%;
 }
 
 /* banner */
@@ -160,10 +178,14 @@ footer span{
 .footer_title{
 	border-bottom: 1px solid white;
 }
+.footer_title h1{
+	font-weight: bold;
+}
 .footer_title span{
 	position: absolute;
 	bottom:10px;
 	right:0;
+	font-weight: bold;
 }
 .footer_nav{
 	float:left;
@@ -175,8 +197,10 @@ footer span{
 	padding-left: 0;
 }
 .footer_nav li{
-	color: white;
 	margin: 1em;
+}
+.footer_nav a{
+	color: white;
 }
 
 /*custom coating page*/
