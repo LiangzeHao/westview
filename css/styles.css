@@ -151,9 +151,13 @@
 	height: 50em;
 }
 .category_block{
-	height:3em;
+	cursor:pointer;
 	width:100%;
 	position:relative;
+	border-right: solid;
+	border-color: #888888;
+	text-align: right;
+	padding: 1em;
 }
 /*product block */
 .product_block{
@@ -172,7 +176,6 @@
    	background-color: white;
    	padding: 0;
 }
-
 /* footer */
 footer{
 	float: left;

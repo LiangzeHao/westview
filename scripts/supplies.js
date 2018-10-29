@@ -49,12 +49,27 @@ var products = [
 
 ];
 
+
 for (j in categories){
 	$(".category_collection").append(
-		"<li class='category_block'>" + categories[j].name + "</li>");
+		"<li class='category_block' onclick=filterSelection('"+categories[j].name+"')>" + categories[j].name + "</li>");
 }
 
-for (i in products){
-	$(".product_collection").append(
-		"<div class = 'product_block' style = \"background-image: url('images/products/" + products[i].id + ".jpg')\"><span>" + products[i].name + "</span></div>");
+
+
+filterSelection("all")
+
+function filterSelection(c){	
+	$(".product_collection").html("");
+	for (i in products){
+		if(c == "all"){
+			$(".product_collection").append(
+				"<div class = 'product_block' style = \"background-image: url('images/products/" + products[i].id + ".jpg')\"><span>" + products[i].name + "</span></div>");
+		}
+		if(products[i].category == c){
+			$(".product_collection").append(
+				"<div class = 'product_block' style = \"background-image: url('images/products/" + products[i].id + ".jpg')\"><span>" + products[i].name + "</span></div>");
+		}
+	}
+
 }
