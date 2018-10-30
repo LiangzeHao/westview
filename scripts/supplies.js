@@ -52,7 +52,7 @@ var products = [
 
 for (j in categories){
 	$(".category_collection").append(
-		"<li class='category_block' onclick=filterSelection('"+categories[j].name+"')>" + categories[j].name + "</li>");
+		"<li id='"+categories[j].name+"' class='category_block' onclick=filterSelection('"+categories[j].name+"')>" + categories[j].name + "</li>");
 }
 
 
@@ -71,5 +71,8 @@ function filterSelection(c){
 				"<div class = 'product_block' style = \"background-image: url('images/products/" + products[i].id + ".jpg')\"><span>" + products[i].name + "</span></div>");
 		}
 	}
-
+	if(c != "all"){
+		$("li.active_category").removeClass("active_category");
+		$('#'+c).addClass("active_category");
+	}
 }
