@@ -224,3 +224,39 @@ footer span{
 	text-align: center;
 	padding-top: 2em;
 }
+
+.main-text p{
+    line-height: 2;
+    margin-top: 2em;
+}
+
+.map{
+    width:100%;
+}
+
+.address_info, .contact_info {
+    padding:0;
+    margin: 1em 1em;
+}
+
+
+.address_info {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: darkgrey;
+}
+
+.address_info h4, .contact_info h4 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.contact_info p {
+    margin-bottom:0;
+    margin-top: 1em;
+}
+
+.contact_info span{
+    color: grey;
+    margin-left:1em;
+}
