@@ -151,9 +151,27 @@
 	height: 50em;
 }
 .category_block{
-	height:3em;
+	cursor:pointer;
 	width:100%;
 	position:relative;
+	border-right: solid;
+	border-color: #888888;
+	border-width: 5px;
+	text-align: right;
+	padding: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.category_block:hover{
+	border-color: #4ddbff;
+}
+.category_block:active {
+	border-color: blue;
+}
+.active_category{
+	border-color: blue;
 }
 /*product block */
 .product_block{
@@ -172,7 +190,6 @@
    	background-color: white;
    	padding: 0;
 }
-
 /* footer */
 footer{
 	float: left;
