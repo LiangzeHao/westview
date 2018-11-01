@@ -382,4 +382,68 @@ footer span{
 	.footer_title span{
 		display: none;
 	}
+
+.main-text p{
+    line-height: 2;
+}
+
+.map{
+    width:100%;
+}
+
+.address_info, .contact_info {
+    padding:0;
+    margin: 1em 1em;
+}
+
+
+.address_info {
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: darkgrey;
+}
+
+.address_info h4, .contact_info h4 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.contact_info p {
+    margin-bottom:0;
+    margin-top: 1em;
+}
+
+.contact_info span{
+    color: grey;
+    margin-left:1em;
+}
+
+.blank_gap{
+	margin: 2em 0;
+}
+
+.page_slogan{
+	text-align: center;
+	margin: 2em 0;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.door_info {
+
+}
+
+.door_info a{
+	line-height: 5;
+	padding: 0.5em;
+	background-color: lightskyblue;
+	color: white;
+}
+
+.parse_line{
+	border-bottom: solid;
+	border-color: grey;
+	border-width: 1px;
+	padding-bottom: 3em;
+	margin-bottom: 3em;
 }
