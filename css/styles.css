@@ -518,8 +518,13 @@ footer span{
 }
 .main-text p{
     line-height: 2;
+    font-size:1.5em;
 }
-
+.main-text .text-title{
+    font-size: 2em;
+    font-weight: bold;
+    color: #4169e1;
+}
 .map{
     width:100%;
 }
