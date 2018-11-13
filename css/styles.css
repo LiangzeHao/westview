@@ -1,10 +1,15 @@
+html, body{
+    height:100%;
+}
+p, span, a {
+    font-family: 'Archivo', sans-serif;
+}
 /*Header*/
 header{
 	background-color: #cccccc;
 	border-radius: 0;
 	border: 0;
 	margin:0;
-
 }
 #logo_img{
 	display: inline-block;
@@ -37,6 +42,7 @@ header{
 #header_nav a:hover{
 	background-color: #bfbfbf;
 }
+/* hamburger button for small screen size */
 #menu_icon{
 	width:30px;
 	height:30px;
@@ -52,6 +58,7 @@ header{
 	background-color: #cccccc;
 	list-style-type: none;
 	padding: 0;
+    margin:0;
 }
 #menu_nav li{
 	border-style: solid;
@@ -81,11 +88,16 @@ header{
 #main-content{
 	padding: 0;
 	padding-bottom: 2em;
+    margin: 0;
+    width:100%;
 }
-
+.row{
+    margin:0;
+}
+/*=========================== Home Page ===========================*/
 /*Carousel*/
 #myCarousel{
-	width: auto;
+	/*width: auto;*/
 	height: 500px;
 }
 #myCarousel img{
@@ -128,16 +140,15 @@ header{
 	height: 30%;
 }
 .tiles {
-    border-style: groove;
     padding: 1.5em;
     text-align: center;
     box-shadow: 0px 0px 50px #888888;
     border-style: none;
     height: 450px;
 }
-.tile_intro .title{
-	font-weight: bold;
-	font-size: 1.1em;
+.tile_intro .title {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 .tiles .btn{
 	position: absolute;
@@ -208,14 +219,82 @@ header{
    	background-color: white;
    	padding: 0.2em;
 }
-/*category block */
-.category_collection{
-	height: 50em;
-	padding-top: 5em;
+/*======================== supplies page =========================*/
+#product_page{
+	display:none;
+	position: absolute;
+	width: 100%;
+	height: 200%;
+	background-color: black;
+    background-size:cover;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 1;
+}
+#product_detail{
+	display:none;
+	position: absolute;
+	left:30%;
+	right: 30%;
+	top:30%;
+	margin: auto;
+	width: 400px;
+	z-index: 2;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	border-radius: 20px;
 	text-align: center;
 }
-.space{
+#p_name{
+    font-size:1.5em;
+}
+#product_image{
+	width:300px;
+	height:300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+/*category block */
+.category_collection{
+    display:inline-block;
 	height: 50em;
+	padding-top: 5em;
+    vertical-align:top;
+    list-style-type:none;
+}
+
+.space{
+    display:inline-block;
 }
 .category_block{
 	cursor:pointer;
@@ -241,12 +320,18 @@ header{
 	border-color: blue;
 }
 /*product block */
+.product_collection{
+    display:inline-block;
+    padding-top:2em;
+    padding-right:0;
+    width:
+}
 .product_block{
 	display: inline-block;
     margin-right: 3em;
  	margin-top: 3em;
-    height: 10em;
-    width: 10%;
+    height: 7em;
+    width: 15%;
     position: relative;
 }
 .product_block span {
@@ -311,7 +396,7 @@ footer span{
 	text-align: center;
 	padding-top: 2em;
 }
-
+/* Style specified for smart phone*/
 @media(max-width: 425px){
 	#logo_img{
 		margin:0 0 0 1em;
@@ -328,8 +413,11 @@ footer span{
 	#myCarousel{
 		display: none;
 	}
+    .banner span{
+        font-size:1.5em;
+    }
 	.tiles{
-		width: 70%;
+		width: 95%;
 		margin: auto;
 		height: 450px;
 		margin-bottom: 2em;
@@ -348,6 +436,99 @@ footer span{
 		font-size:0.7em;
 		height:7em;
 	}
+    .category_collection{
+        width:30%;
+    }
+    .product_collection{
+        width:50%;
+        padding-left:0;
+    }
+    .product_block{
+        width:40%;
+        margin-right:10%;
+    }
+    .category_block{
+        font-size:1.5em;
+        padding:0.5em;
+    }
+    #product_detail{
+        left:10%;
+        width:80%;
+    }
+    #product_image {
+        width: 90%;
+        height: 70%;
+    }
+}
+/* Style specified for tablet device*/
+@media(min-width:426px) and (max-width: 1023px){
+	#logo_img{
+		margin:0 0 0 2em;
+		width:15%;
+	}
+	#myCarousel{
+		height:250px;
+	}
+	#myCarousel img{
+		height:250px;
+	}
+	.carousel-caption{
+		top:10%;
+	}
+	.carousel-caption h1{
+		font-size: 2.3em;
+	}
+	.carousel-caption p{
+		font-size: 0.9em;
+	}
+	.tiles{
+		margin: auto;
+		height: 300px;
+		margin-bottom: 2em;
+		padding: 1em;
+	}
+    #home_tiles .tiles img{
+        position:absolute;
+        left:8%;
+        top:10%;
+        height:70%;
+        width:40%;
+    }
+    .tile_intro{
+        position:absolute;
+        right:8%;
+        top:10%;
+        width:40%;
+        margin-left:2em;
+    }
+	.tiles .btn{
+		width:30%;
+        left: 35%;
+	}
+	#home_tiles img{
+		height:40%;
+	}
+	.footer_title span{
+		display: none;
+	}
+    .footer_nav{
+        padding:5px;
+    }
+    .category_collection{
+        width:25%;
+    }
+    .product_collection{
+        width:60%;
+    }
+    #product_detail{
+        left:25%;
+        width:50%;
+    }
+    #product_image{
+        width:90%;
+        height:70%;
+    }
+}
 
     .banner span {
         font-size: 1em;
@@ -418,8 +599,13 @@ footer span{
 
 .main-text p{
     line-height: 2;
+    font-size:1.5em;
 }
-
+.main-text .text-title{
+    font-size: 2em;
+    font-weight: bold;
+    color: #4169e1;
+}
 .map{
     width:100%;
 }
