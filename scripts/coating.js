@@ -84,6 +84,6 @@ var colors = [
 ];
 for (i in colors) {
     $(".color_collection").append(
-        "<div class = 'color_block' style = 'background-color:" + colors[i].code + "'><span>" + colors[i].name + "</span></div>");
+        "<div class = 'color_block col-md-3 col-xs-12' style = 'background-color:" + colors[i].code + "'><span>" + colors[i].name + "</span></div>");
 }
     

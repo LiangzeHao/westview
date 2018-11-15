@@ -94,7 +94,7 @@ header{
 .row{
     margin:0;
 }
-/*=========================== Home Page ===========================*/ 
+/*=========================== Home Page ===========================*/
 /*Carousel*/
 #myCarousel{
 	/*width: auto;*/
@@ -171,7 +171,7 @@ header{
 
 /* banner */
 .banner{
-    width:100%;
+    padding:0;
     overflow: hidden;
     position: relative;
 }
@@ -194,11 +194,17 @@ header{
 }
 
 /*color block */
-.color_block{
+
+.color_collection {
+    width: 100%;
+
+}
+
+
+
+.color_block {
     display: inline-block;
-    margin: 1em 2em;
     height: 10em;
-    width: 20%;
     position: relative;
     border-style: solid;
     border-color: #e3e6ed;
@@ -239,7 +245,7 @@ header{
 	border-color: black;
 	border-width: 5px;
 	border-radius: 20px;
-	text-align: center; 
+	text-align: center;
 }
 #p_name{
     font-size:1.5em;
@@ -318,7 +324,6 @@ header{
     display:inline-block;
     padding-top:2em;
     padding-right:0;
-    width: 
 }
 .product_block{
 	display: inline-block;
@@ -522,7 +527,72 @@ footer span{
         width:90%;
         height:70%;
     }
+
+    .banner span {
+        font-size: 1em;
+    }
+
+    .page_slogan p{
+        font-size: 1em;
+    }
 }
+
+@media(min-width:426px) and (max-width: 768px) {
+    #logo_img {
+        margin: 0 0 0 2em;
+        width: 15%;
+    }
+
+    #myCarousel {
+        height: 250px;
+    }
+
+        #myCarousel img {
+            height: 250px;
+        }
+
+    .carousel-caption {
+        top: 10%;
+    }
+
+        .carousel-caption h1 {
+            font-size: 2.3em;
+        }
+
+        .carousel-caption p {
+            font-size: 0.9em;
+        }
+
+    .tiles {
+        width: 70%;
+        margin: auto;
+        height: 450px;
+        margin-bottom: 2em;
+        padding: 1em;
+    }
+
+        .tiles .btn {
+            width: 50%;
+        }
+
+    #home_tiles img {
+        height: 40%;
+    }
+
+    .footer_title span {
+        display: none;
+    }
+
+    .banner span {
+        font-size: 1.5em;
+    }
+
+    .page_slogan p{
+        font-size: 1em;
+    }
+
+}
+
 .main-text p{
     line-height: 2;
     font-size:1.5em;
