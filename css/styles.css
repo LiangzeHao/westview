@@ -22,7 +22,6 @@ header{
 }
 #header_nav{
 	display: inline-block;
-	width: 70%;
 	margin: 0;
 	padding: 0;
 	line-height: 0.5em;
@@ -31,7 +30,7 @@ header{
 #header_nav li{
 	float: left;
 }
-#header_nav a{
+#header_nav a,p{
 	display: block;
 	color: black;
 	text-align: center;
@@ -41,6 +40,12 @@ header{
 
 #header_nav a:hover{
 	background-color: #bfbfbf;
+}
+#tel_num{
+    font-weight:bold;
+    font-size:1.2em;
+    padding:0;
+    margin:0;
 }
 /* hamburger button for small screen size */
 #menu_icon{
@@ -74,6 +79,7 @@ header{
 	text-align: center;
 	color:black;
 }
+
 
 #menu_nav a:hover{
 	background-color: #bfbfbf;
@@ -220,6 +226,12 @@ header{
    	padding: 0.2em;
 }
 /*======================== supplies page =========================*/
+.supplies_banner > img{
+    opacity:0.5;
+}
+.supplies_banner > span{
+    z-index:1;
+}
 #product_page{
 	display:none;
 	position: absolute;
@@ -593,14 +605,20 @@ footer span{
 
 }
 
+.text-title{
+    text-align:left;
+}
 .main-text p{
     line-height: 2;
     font-size:1.5em;
+    padding:0;
+    text-align:left;
 }
 .main-text .text-title{
     font-size: 2em;
     font-weight: bold;
     color: #4169e1;
+    padding:0;
 }
 .map{
     width:100%;
