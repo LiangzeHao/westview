@@ -662,7 +662,9 @@ footer span{
 	font-size: 1.5em;
 }
 
-.door_info {
+.door_info p{
+	line-height: 1.5;
+	font-size: 1em;
 
 }
 
@@ -681,3 +683,14 @@ footer span{
 	margin-bottom: 3em;
 }
 
+.door_display img{
+	
+}
+
+.main_image img{
+	width: 100%;
+}
+
+.thumbnails img{
+	
+}

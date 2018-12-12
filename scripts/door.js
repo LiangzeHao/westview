@@ -1,0 +1,1 @@
+$(".main_image").children().first().attr('src',$('.thumbnails').children().first().attr('src'));
