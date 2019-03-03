@@ -11,6 +11,14 @@ header{
 	border: 0;
 	margin:0;
 }
+
+#logo {
+    height:100px;
+}
+
+.navbar {
+    margin-bottom:0;
+}
 #logo_img{
 	display: inline-block;
 	background-image: url('../images/logo.png');
@@ -34,12 +42,17 @@ header{
 	display: block;
 	color: black;
 	text-align: center;
-	padding: 1em 1em;
+	padding: 0.7em 0.7em;
 	text-decoration: none;
 }
 
 #header_nav a:hover{
 	background-color: #bfbfbf;
+}
+#tel_num_container {
+	position: absolute;
+	top:1em;
+	right:1.5em;
 }
 #tel_num{
     font-weight:bold;
@@ -150,11 +163,17 @@ header{
     text-align: center;
     box-shadow: 0px 0px 50px #888888;
     border-style: none;
-    height: 450px;
+	height: 450px;
+	max-width: 350px;
 }
 .tile_intro .title {
     font-weight: bold;
-    font-size: 1.1em;
+	font-size: 1.1em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.tile_content{
+	text-align: left;
 }
 .tiles .btn{
 	position: absolute;
@@ -179,7 +198,8 @@ header{
 .banner{
     padding:0;
     overflow: hidden;
-    position: relative;
+	position: relative;
+	height:300px;
 }
 
 .banner span{
@@ -195,8 +215,9 @@ header{
 }
 
 .banner img{
-    width:100%;
-    vertical-align:bottom;
+	width:100%;
+	max-width:100%; 
+	max-height:100%;
 }
 
 /*color block */
@@ -402,16 +423,21 @@ footer span{
 	color:#4ddbff;
 }
 
-/*custom coating page*/
-.coating_intro{
-	text-align: center;
-	padding-top: 2em;
+.main_image img {
+    height:350px;
+}
+
+.thumbnails img {
+	height: 130px;
+}
+.selected {
+    border: 5px solid gray;
+    border-radius: 5px;
 }
 /* Style specified for smart phone*/
-@media(max-width: 425px){
-	#logo_img{
+@media(max-width: 425px) {
+    #logo_img{
 		margin:0 0 0 1em;
-		width: 25%;
 	}
 	#header_nav{
 		display:none;
@@ -421,8 +447,17 @@ footer span{
 		margin-top: 1.5em;
 		margin-right: 1em;
 	}
+	#tel_num_container{
+		top:5em;
+	}
+	#tel_num{
+		font-size:1.3em;
+	}
 	#myCarousel{
 		display: none;
+	}
+	.banner {
+		height: 100px;
 	}
     .banner span{
         font-size:1.5em;
@@ -469,13 +504,41 @@ footer span{
     #product_image {
         width: 90%;
         height: 70%;
-    }
+	}
+	.page_slogan{
+		margin:0 !important;
+	}
+	img.card-img-top{
+		width:100%;
+		height:150px; 
+	}
+	div.card{
+		display:inline-block;
+		margin-left:11%;
+		margin-bottom: 20px;
+		padding: 0;
+		width:33%;
+		vertical-align: top;
+	}
+	.main_image img{
+		width: 70% !important;
+		margin-left: 15%;
+		margin-top: 5%;
+		height:200px;
+	}
+	.thumbnails img{
+		width:55px;
+		height:55px;
+		padding:0;
+	}
+	.blank_gap{
+		margin:0 !important;
+	}
 }
 /* Style specified for tablet device*/
 @media(min-width:426px) and (max-width: 1023px){
 	#logo_img{
-		margin:0 0 0 2em;
-		width:15%;
+		margin:0 0 0 1em;
 	}
 	#myCarousel{
 		height:250px;
@@ -497,12 +560,13 @@ footer span{
 		height: 300px;
 		margin-bottom: 2em;
 		padding: 1em;
+		width:70%;
 	}
     #home_tiles .tiles img{
         position:absolute;
         left:8%;
-        top:10%;
-        height:70%;
+        top:20%;
+        height:50%;
         width:40%;
     }
     .tile_intro{
@@ -511,10 +575,18 @@ footer span{
         top:10%;
         width:40%;
         margin-left:2em;
-    }
+	}
+	.tile_intro>.title{
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.tile_intro>.tile_content{
+		text-align: left;
+	}
 	.tiles .btn{
 		width:30%;
-        left: 35%;
+		left: 25%;
+		bottom:8%;
 	}
 	#home_tiles img{
 		height:40%;
@@ -538,20 +610,48 @@ footer span{
     #product_image{
         width:90%;
         height:70%;
-    }
-
-    .banner span {
-        font-size: 1em;
-    }
-
+	}
+	.page_slogan{
+		margin:1em 0 !important;
+	}
     .page_slogan p{
         font-size: 1em;
-    }
-}
+	}
+	.banner{
+		height:160px;
+	}
+	img.card-img-top{
+		width:100px; 
+		height:130px;
+	}
+	.main_image{
+		width:41.6667%;
+	}
+	.main_image img{
+		height:60%;
+		margin-top:20%;
+		margin-left:10%;
+	}
 
+}
+@media(min-width:500px) and (max-width:1024px){
+	.tiles{
+		max-width:none;
+		margin-left:15%;
+	}
+	.tiles .btn{
+		left:35%;
+	}
+}
+@media(min-width:426px)and(max-width:991px){
+	.main_image>img{
+		width:50% !important;
+	}
+
+}
 @media(min-width:426px) and (max-width: 768px) {
     #logo_img {
-        margin: 0 0 0 2em;
+        margin: 0 0 0 1em;
         width: 15%;
     }
 
@@ -576,15 +676,16 @@ footer span{
         }
 
     .tiles {
-        width: 70%;
+        width: 90%;
         margin: auto;
-        height: 450px;
+        height: 300px;
         margin-bottom: 2em;
         padding: 1em;
     }
 
         .tiles .btn {
-            width: 50%;
+			width: 50%;
+			left: 25%;
         }
 
     #home_tiles img {
@@ -596,13 +697,32 @@ footer span{
     }
 
     .banner span {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .page_slogan p{
         font-size: 1em;
     }
-
+	.card{
+		display: inline-block;
+		width:25%;
+		margin-left:16%;
+		margin-right:0;
+	}
+	.main_image{
+		width:100%;
+	}
+	.main_image img{
+		width:50% !important;
+		margin-top: 5%;
+		margin-left:25%;
+	}
+	.thumbnails img{
+		height: 70px;
+	}
+	.blank_gap{
+		margin:0 !important;
+	}
 }
 
 .text-title{
@@ -691,6 +811,25 @@ footer span{
 	width: 100%;
 }
 
-.thumbnails img{
-	
+.doortable{
+    overflow-x:scroll;
+}
+.card{
+    margin-bottom:40px;
+}
+.card-title{
+	font-size:1.4em;
+}
+.card-img-top{
+	width:200px; 
+	height:260px;
+}
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }

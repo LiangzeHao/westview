@@ -4,83 +4,65 @@ var colors = [
         code: "#000000"
     },
     {
-        name: "BEIGE",
-        code: "#F5F5DC"
-    },
-    {
-        name: "CAP BLACK",
-        code: "#000000"
-    },
-    {
-        name: "SANDEX BLACK",
-        code: "#000000"
-    },
-    {
-        name: "COFFEE BROWN",
-        code: "#6F4E37"
+        name: "POLO CHAR",
+        code: "#333333"
     },
     {
         name: "DARK BROWN",
-        code: "#654321"
-    },
-    {
-        name: "GENTECK BROWN (BROWN NOVATECH)",
-        code: "#654321"
-    },
-    {
-        name: "ROCK BROWN",
-        code: "#5A4D41"
+        code: "#393931"
     },
     {
         name: "RIDEAU BROWN",
-        code: "#A52A2A"
+        code: "#3F3A36"
     },
     {
         name: "RAPTURE BURGUNDY",
-        code: "#800020"
+        code: "#46181A"
     },
     {
-        name: "BLACK CHARCOAL",
-        code: "#36454F"
+        name: "COFFEE BROWN",
+        code: "#402722"
     },
     {
-        name: "POLO CHARCOAL",
-        code: "#646464"
+        name: "ROCK BROWN",
+        code: "#4F342B"
     },
     {
-        name: "KENDALL CHARCOAL (GREY)",
-        code: "#686763"
+        name: "ADOBE BROWN",
+        code: "#3F3A36"
     },
     {
-        name: "GREY SMOKE",
-        code: "#708c98"
+        name: "DINNER PARTY RED",
+        code: "#A22A2C"
     },
     {
-        name: "HENTEK SLATE",
-        code: "#708c98"
+        name: "RIVIERA BLUE",
+        code: "#2C3546"
     },
     {
-        name: "SILVER (ALUMINIUM)",
-        code: "#C0C0C0"
+        name: "SLATE BLUE",
+        code: "#5C6D7D"
     },
     {
-        name: "BRONZE",
-        code: "#CD7F32"
+        name: "GLOW GREY",
+        code: "#9D9F9C"
     },
     {
-        name: "GOLD",
-        code: "#FFD700"
+        name: "KENDALL CHARCOAL",
+        code: "#5D5C58"
     },
     {
-        name: "WHITE",
-        code: "#ffffff"
+        name: "MINK BEIGE",
+        code: "#AD9B83"
     },
     {
-        name: "WHITE (SHERWIN WILLIAMS)",
-        code: "#cdd2ca"
+        name: "MIKADO IVORY",
+        code: "#E9DFBC"
+    },
+    {
+        name: "STRAND IVORY",
+        code: "#E3DFD3"
     }
-
-
 ];
 for (i in colors) {
     $(".color_collection").append(
