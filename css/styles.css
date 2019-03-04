@@ -199,7 +199,7 @@ header{
     padding:0;
     overflow: hidden;
 	position: relative;
-	height:300px;
+	height:242px;
 }
 
 .banner span{
@@ -708,6 +708,9 @@ footer span{
 		width:25%;
 		margin-left:16%;
 		margin-right:0;
+		vertical-align: middle;
+		padding-left:0 !important;
+		padding-right:0 !important;
 	}
 	.main_image{
 		width:100%;
@@ -761,14 +764,20 @@ footer span{
     margin-top: 0;
 }
 
-.contact_info p {
-    margin-bottom:0;
-    margin-top: 1em;
+#contact_info p {
+	margin-bottom:0;
+	padding:0.2em 0.2em;
+	text-align: left;
 }
-
-.contact_info span{
-    color: grey;
-    margin-left:1em;
+#contact_info .contact_title{
+	font-size:1.2em;
+	font-weight: bold;
+}
+#contact_info .contact_subtitle{
+	font-size:1.2em;
+}
+#contact_info .contact_detail{
+	color: grey;
 }
 
 .blank_gap{
@@ -821,8 +830,8 @@ footer span{
 	font-size:1.4em;
 }
 .card-img-top{
-	width:200px; 
-	height:260px;
+	width:160px; 
+	height:200px;
 }
 ::-webkit-scrollbar {
 	-webkit-appearance: none;
@@ -832,4 +841,8 @@ footer span{
 	border-radius: 4px;
 	background-color: rgba(0,0,0,.5);
 	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+.showSelectedPage{
+	background-color:lightblue;
+	font-weight: bold;
 }
